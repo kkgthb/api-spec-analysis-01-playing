@@ -1,0 +1,13 @@
+rules:
+  mycompany-contact-name-and-email-required:
+    description: Ensures that all OpenAPIs have an information contact with name and email.
+    message: Missing the {{property}}
+    severity: error
+    given: $.info
+    then:
+      - function: truthy
+        field: contact
+      - function: truthy
+        field: contact.name
+      - function: truthy
+        field: contact.email

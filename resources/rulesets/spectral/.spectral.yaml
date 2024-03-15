@@ -1,0 +1,5 @@
+formats: ["oas3"]
+extends:
+  - ./contact-info.yaml
+  - spectral:oas # Source: https://docs.stoplight.io/docs/spectral/4dec24461f3af-open-api-rules
+  - https://raw.githubusercontent.com/Azure/azure-api-style-guide/main/spectral.yaml # More: https://learn.microsoft.com/en-us/azure/architecture/best-practices/api-design
